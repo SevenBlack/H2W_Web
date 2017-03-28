@@ -348,7 +348,7 @@ header .nav li .dropdown-menu li a {
 /* --- menu --- */
 
 .flex-caption {
-	margin-top: 20px;
+	top: 35%;
 }
 
 .flex-caption p {
