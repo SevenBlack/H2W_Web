@@ -13411,7 +13411,7 @@ a:hover {
 }
 
 .brand {
-	background-image: url(../images/ampd_logo.png);
+	background-image: url(../img/h2w_logo.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: inline-block;
@@ -13912,8 +13912,8 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: rgba(0, 0, 0, .8);
-	opacity: .8
+	background-color: rgba(0, 0, 0, 1);
+	opacity: 1
 }
 
 footer {
@@ -16433,10 +16433,10 @@ footer ul li a {
 }
 
 .distribution .header-transparent {
-	height: 650px;
+	height: 121px;
 	position: relative;
 	overflow: hidden;
-	max-height: 950px
+	max-height: 121px
 }
 
 .distribution_main {
@@ -18166,8 +18166,11 @@ footer ul li a {
 }
 
 .contact .headerBorder {
-	background-color: rgba(0, 0, 0, .8);
-	opacity: .8
+	background-color: rgba(0, 0, 0, 1);
+	
+	/*background: url(../img/Website-background.jpg);*/
+	
+	opacity: 1
 }
 
 @media (min-width:1400px) {
