@@ -13088,10 +13088,10 @@ body {
 }
 
 .banner.header-transparent {
-	height: 950px;
+	height: 121px;
 	position: relative;
 	overflow: hidden;
-	max-height: 950px
+	max-height: 121px
 }
 
 @media (min-width:2560px) {
@@ -17781,7 +17781,8 @@ footer ul li a {
 	-webkit-box-align: end!important;
 	-ms-flex-align: end!important;
 	align-items: flex-end!important;
-	margin-top: 185px
+	margin-top: 185px;
+	margin-bottom: 185px
 }
 
 .enterprise-ready-img.conleft,
@@ -17807,11 +17808,11 @@ footer ul li a {
 	max-width: 33px
 }
 
-.iconsection h3 {
+.iconsection h1 {
 	color: #333;
-	font-size: 20px;
+	font-size: 40px;
 	padding: 0;
-	margin: 38px 0
+	margin: 78px 0
 }
 
 .iconsection p {
