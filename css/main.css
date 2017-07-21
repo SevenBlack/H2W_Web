@@ -24,6 +24,11 @@
 	padding: 0
 }
 
+.company_middle {
+	min-width: 960px;
+}
+
+
 .slick-track {
 	position: relative;
 	top: 0;
@@ -1126,7 +1131,7 @@ html {
 }
 
 body {
-	margin: 0
+	margin: 0;
 }
 
 article,
@@ -2485,7 +2490,7 @@ body {
 	font-size: 14px;
 	line-height: 1.428571429;
 	color: #333;
-	background-color: #fff
+	background-color: #fff;
 }
 
 button,
@@ -3936,7 +3941,12 @@ th {
 	margin-bottom: 20px
 }
 
-.table>tbody>tr>td,
+.table>t
+
+
+
+
+>tr>td,
 .table>tbody>tr>th,
 .table>tfoot>tr>td,
 .table>tfoot>tr>th,
@@ -3962,7 +3972,8 @@ th {
 	border-top: 0
 }
 
-.table>tbody+tbody {
+.table>t
++tbody {
 	border-top: 2px solid #ddd
 }
 
@@ -7650,7 +7661,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 	padding-left: 0;
 	margin: 20px 0;
 	list-style: none;
-	text-align: center
+	text-align: center;
 }
 
 .pager:after,
@@ -13360,6 +13371,8 @@ a {
 	height: auto
 }
 
+
+
 .aligncenter {
 	display: block;
 	margin: 10px auto;
@@ -16436,7 +16449,7 @@ footer ul li a {
 	height: 121px;
 	position: relative;
 	overflow: hidden;
-	max-height: 121px
+	max-height: 121px;
 }
 
 .distribution_main {

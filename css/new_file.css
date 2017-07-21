@@ -1,0 +1,953 @@
+@media (min-width: 960px) {
+
+	.text_middle {
+		border: 1px solid #A3A3A5;
+		border-radius: 13px;
+		background-color:#fff;
+	 	background-color:rgba(255,255,255,0.6); 
+		width: 40%;
+		height: 30%;
+		position: absolute;
+		top: 32%;
+		left: 30%;
+	}
+	
+	.font_one {
+		width: 100%;
+		margin: 0;
+		text-align: center;
+		font-family:Arial,Verdana,Sans-serif;
+		font-size: 5.0vw;
+		font-weight: 400;
+	}
+	
+	.font_two {
+		width: 80%;
+		margin: 0 10% 0 10%;
+		font-size: 3.0vw;
+		font-weight: 300;
+		text-align: center;
+	}
+	
+	.button {
+		width: 60%;
+		margin: 4% 20% auto 20%;
+		font-size: 2.5vw;
+		font-weight: 100;
+		color: #fff;
+	}
+	
+	.button_more {
+		margin: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+		border-radius: 7px;
+		background: #FF6A1A;
+		float: left;
+	}
+	
+	.button_buy {
+		margin: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+		border-radius: 7px;
+		background: #FF6A1A;
+		float: right;
+	}
+}
+
+@media (max-width: 960px) {
+	.text_middle {
+		border: 1px solid #A3A3A5;
+		border-radius: 13px;
+		background-color:#fff;
+	 	background-color:rgba(255,255,255,0.6); 
+		width: 384px;
+		height: 30%;
+		position: absolute;
+		top: 32%;
+		left: 288px;
+	}
+	
+	.font_one {
+		width: 100%;
+		margin: 0;
+		text-align: center;
+		font-family:Arial,Verdana,Sans-serif;
+		font-size: 3em;
+		font-weight: 400;
+	}
+	
+	.font_two {
+		width: 80%;
+		margin: 0 10% 0 10%;
+		font-size: 2em;
+		font-weight: 300;
+		text-align: center;
+	}
+	
+	.button {
+		width: 60%;
+		margin: 4% 20% auto 20%;
+		font-size: 1.5em;
+		font-weight: 100;
+		color: #fff;
+	}
+	
+	.button_more {
+		margin: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+		border-radius: 7px;
+		background: #FF6A1A;
+		float: left;
+	}
+	
+	.button_buy {
+		margin: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+		border-radius: 7px;
+		background: #FF6A1A;
+		float: right;
+	}
+}
+
+.button a:link {
+	color: #fff;
+	text-decoration:none;
+}
+
+.button a:visited {
+	color: #fff;
+	text-decoration:none;
+}
+
+.button a:hover {
+	text-decoration: underline;
+}
+
+.button a:active {
+	
+}
+
+
+/******************technology.html样式***********************/
+@media (min-width:960px) {
+	.more {
+		position: absolute;
+		top: 14.2%;
+		right: 7%;
+		font-size: 2.3vw;
+		font-weight: 300;
+	}
+	
+	.more a:link {
+		color: #FF6A20;
+		text-decoration:none;
+	}
+	
+	.more a:visited {
+		color: #FF6A20;
+		text-decoration:none;
+	}
+	
+	.more a:hover {
+		text-decoration: underline;
+	}
+	
+	.more a:active {
+		
+	}
+	
+	.company_middle .title {
+		text-align: center;
+		font-size: 4.5vw;
+		font-weight: 300;
+	}
+	
+	.company_middle .title_1 {
+		width: 30%;
+		position: absolute;
+		top: 0.7%;
+		left: 35%;
+	}
+	
+	.company_middle .title_2 {
+		width: 50%;
+		position: absolute;
+		top: 18%;
+		left: 25%;
+	}
+	
+	.company_middle .title_3 {
+		width: 50%;
+		position: absolute;
+		top: 40%;
+		left: 25%;
+	}
+	
+	.company_middle .title_4 {
+		width: 20%;
+		position: absolute;
+		top: 69.5%;
+		left: 40%;
+	}
+	
+	.company_middle .title_5 {
+		position: absolute;
+		top: 89.2%;
+		left: 52%;
+		font-size: 4.5vw;
+		font-weight: 300;
+	}
+	
+	.company_middle .text {
+		font-size: 2.3vw;
+		font-weight: 300;
+	}
+	
+	.company_middle .text_1 {
+		position: absolute;
+		top: 3.4%;
+		left: 10%;	
+	}
+	
+	.company_middle .text_2 {
+		position: absolute;
+		top: 13%;
+		left: 56%;
+	}
+	
+	.company_middle .text_3 {
+		width: 50%;
+		text-align: center;
+		position: absolute;
+		top: 71.7%;
+		left: 25%;
+		font-size: 2.5vw;
+	}
+	
+	.position {
+		font-size: 1.8vw;
+		font-weight: 300;
+		color: #FE6A46;
+	}
+	
+	.company_middle .position_1 {
+		position: absolute;
+		top: 25.3%;
+		left: 61%;
+	}
+	
+	.company_middle .position_2 {
+		position: absolute;
+		top: 29.2%;
+		left: 65.2%;
+	}
+	
+	.company_middle .position_3 {
+		position: absolute;
+		top: 32.8%;
+		left: 27%;
+	}
+	
+	.company_middle .position_4 {
+		position: absolute;
+		top: 34.7%;
+		left: 68.8%;
+	}
+}
+
+@media (max-width:960px) {
+	.company_middle .title {
+		text-align: center;
+		font-size: 2.5em;
+		font-weight: 300;
+	}
+	
+	.company_middle .title_1 {
+		width: 288px;
+		position: absolute;
+		top: 0.7%;
+		left: 336px;
+	}
+	
+	.company_middle .title_2 {
+		width: 480px;
+		position: absolute;
+		top: 18%;
+		left: 240px;
+	}
+	
+	.company_middle .title_3 {
+		width: 480px;
+		position: absolute;
+		top: 39.5%;
+		left: 240px;
+	}
+	
+	.company_middle .title_4 {
+		width: 192px;
+		position: absolute;
+		top: 69.6%;
+		left: 384px;
+	}
+	
+	.company_middle .title_5 {
+		width: 350px;
+		position: absolute;
+		top: 89.4%;
+		left: 490px;
+		font-size: 2.5em;
+		font-weight: 300;
+	}
+	
+	.more {
+		width: 140px;
+		position: absolute;
+		top: 14%;
+		left: 770px;
+		font-size: 1.4em;
+		font-weight: 300;
+	}
+	
+	.more a:link {
+		color: #FF6A20;
+		text-decoration:none;
+	}
+	
+	.more a:visited {
+		color: #FF6A20;
+		text-decoration:none;
+	}
+	
+	.more a:hover {
+		text-decoration: underline;
+	}
+	
+	.more a:active {
+		
+	}
+	
+	.company_middle .text {
+		font-size: 1.4em;
+		font-weight: 300;
+	}
+	
+	.company_middle .text_1 {
+		width: 600px;
+		position: absolute;
+		top: 3.4%;
+		left: 96px;	
+	}
+	
+	.company_middle .text_2 {
+		width: 500px;
+		position: absolute;
+		top: 13%;
+		left: 537px;
+	}
+	
+	.company_middle .text_3 {
+		width: 480px;
+		text-align: center;
+		position: absolute;
+		top: 71.7%;
+		left: 240px;
+		font-size: 1.4em;
+	}
+	
+	.position {
+		font-size: 1em;
+		font-weight: 300;
+		color: #FE6A46;
+	}
+	
+	.company_middle .position_1 {
+		position: absolute;
+		top: 25.3%;
+		left: 585px;
+	}
+	
+	.company_middle .position_2 {
+		width: 150px;
+		position: absolute;
+		top: 29.2%;
+		left: 630px;
+	}
+	
+	.company_middle .position_3 {
+		position: absolute;
+		top: 32.8%;
+		left: 259px;
+	}
+	
+	.company_middle .position_4 {
+		width: 150px;
+		position: absolute;
+		top: 34.7%;
+		left: 660px;
+	}
+}
+/**********************manualcontrol.html样式**************************/
+@media (min-width: 960px) {
+	.manualcontrol .company_middle .text {
+		width: 80%;
+		text-align: center;
+		position: absolute;
+		top: 2%;
+		left: 10%;
+		font-size: 3.0vw;
+		font-weight: 400;
+	}
+	
+	.manualcontrol .company_middle .description  {
+		font-size: 1.8vw;
+		font-weight: 300;
+	}
+	
+	.manualcontrol .company_middle .description_1 {
+		position: absolute;
+		top: 13%;
+		left: 1%;
+	}
+	
+	.manualcontrol .company_middle .description_2 {
+		position: absolute;
+		top: 16%;
+		left: 2.6%;
+	}
+	
+	.manualcontrol .company_middle .description_3 {
+		position: absolute;
+		top: 14.5%;
+		left: 53%;
+	}
+	
+	.manualcontrol .company_middle .state  {
+		font-size: 1.8vw;
+		font-weight: 300;
+	}
+	
+	.manualcontrol .company_middle .state_1 {
+		width: 25%;
+		position: absolute;
+		top: 27.9%;
+		left: 4.7%;
+		text-indent: 1.5em;
+	}
+	
+	.manualcontrol .company_middle .state_2 {
+		width: 20%;
+		position: absolute;
+		top: 43.7%;
+		left: 8.7%;
+		text-indent: 1.5em;
+	}
+	
+	.manualcontrol .company_middle .state_3 {
+		position: absolute;
+		top: 60%;
+		left: 1.5%;
+		text-indent: 1.5em;
+	}
+	
+	.manualcontrol .company_middle .state_4 {
+		width: 27%;
+		position: absolute;
+		top: 75.7%;
+		left: 3.8%;
+		text-indent: 1.5em;
+	}
+	
+	.manualcontrol .company_middle .state_5 {
+		position: absolute;
+		top: 88.77%;
+		left: 5.7%;
+	}
+	
+	.manualcontrol .company_middle .state_text {
+		position: absolute;
+		top: 73.5%;
+		left: 72%;
+	}
+	
+	.manualcontrol .company_middle .power {
+		width: 30%;
+		text-align: center;
+		font-size: 3.0vw;
+		font-weight: 300;
+		position: absolute;
+		left: 35%;
+	}
+	
+	.manualcontrol .company_middle .lowpower {
+		top: 35%;
+		
+	}
+	
+	.manualcontrol .company_middle .highpower_1 {
+		top: 50%;
+	}
+	
+	.manualcontrol .company_middle .highpower_2 {
+		top: 65%;
+	}
+}
+
+@media (max-width: 960px) {
+	.manualcontrol .company_middle .text {
+		width: 768px;
+		text-align: center;
+		position: absolute;
+		top: 2%;
+		left: 96px;
+		font-size: 1.8em;
+		font-weight: 400;
+	}
+	
+	.manualcontrol .company_middle .description  {
+		width: 200px;
+		font-size: 1em;
+		font-weight: 300;
+	}
+	
+	.manualcontrol .company_middle .description_1 {
+		position: absolute;
+		top: 13%;
+		left: 10px;
+	}
+	
+	.manualcontrol .company_middle .description_2 {
+		position: absolute;
+		top: 16%;
+		left: 25px;
+	}
+	
+	.manualcontrol .company_middle .description_3 {
+		position: absolute;
+		top: 14.5%;
+		left: 509px;
+	}
+	
+	.manualcontrol .company_middle .state  {
+		font-size: 1em;
+		font-weight: 300;
+	}
+	
+	.manualcontrol .company_middle .state_1 {
+		width: 240px;
+		position: absolute;
+		top: 27.9%;
+		left: 45px;
+		text-indent: 1.5em;
+	}
+	
+	.manualcontrol .company_middle .state_2 {
+		width: 192px;
+		position: absolute;
+		top: 43.7%;
+		left: 83px;
+		text-indent: 1.5em;
+	}
+	
+	.manualcontrol .company_middle .state_3 {
+		width: 300px;
+		position: absolute;
+		top: 60%;
+		left: 15px;
+		text-indent: 1.5em;
+	}
+	
+	.manualcontrol .company_middle .state_4 {
+		width: 250px;
+		position: absolute;
+		top: 75.7%;
+		left: 36px;
+		text-indent: 1.5em;
+	}
+	
+	.manualcontrol .company_middle .state_5 {
+		width: 300px;
+		position: absolute;
+		top: 88.77%;
+		left: 55px;
+	}
+	
+	.manualcontrol .company_middle .state_text {
+		width: 110px;
+		position: absolute;
+		top: 73.5%;
+		left: 691px;
+	}
+	
+	.manualcontrol .company_middle .power {
+		width: 288px;
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: 300;
+		position: absolute;
+		left: 336px;
+	}
+	
+	.manualcontrol .company_middle .lowpower {
+		top: 35%;
+		
+	}
+	
+	.manualcontrol .company_middle .highpower_1 {
+		top: 50%;
+	}
+	
+	.manualcontrol .company_middle .highpower_2 {
+		top: 65%;
+	}
+}
+/************************appcontrol.hmlt样式***************************/
+@media (min-width: 960px) {
+	.appcontrol .company_middle .title {
+		text-align: center;
+		font-size: 4.5vw;;
+		font-weight: 300;
+	}
+	
+	.appcontrol .company_middle .title_1 {
+		width: 30%;
+		position: absolute;
+		top: 0.5%;
+		left: 35%;
+	}
+	
+	.appcontrol .title_2 {
+		width: 50%;
+		position: absolute;
+		top: 47%;
+		left: 25%;
+	}
+	
+	.appcontrol .unit {
+		font-size: 1.8vw;
+		font-weight: 400;
+	}
+	
+	.appcontrol .unit_1 {
+		position: absolute;
+		top: 6.55%;
+		left: 45.4%;
+	}
+	
+	.appcontrol .unit_2 {
+		position: absolute;
+		top: 5.77%;
+		left: 6.2%;
+	}
+	
+	.appcontrol .unit_3 {
+		position: absolute;
+		top: 7.07%;
+		left: 6.2%;
+	}
+	
+	.appcontrol .unit_4 {
+		position: absolute;
+		top: 9.1%;
+		left: 6.2%;
+	}
+	
+	
+	.appcontrol .unit_5_1 {
+		position: absolute;
+		top: 5.5%;
+		left: 79.5%;
+	}
+	
+	.appcontrol .unit_5_2 {
+		position: absolute;
+		top: 6.6%;
+		left: 79.5%;
+	}
+	
+	.appcontrol .unit_5_3 {
+		position: absolute;
+		top: 7.75%;
+		left: 79.5%;
+	}
+	
+	.appcontrol .unit_5_4 {
+		position: absolute;
+		top: 8.85%;
+		left: 79.5%;
+	}
+	
+	.appcontrol .unit_6 {
+		position: absolute;
+		top: 23.685%;
+		left: 66.3%;
+	}
+	
+	.appcontrol .unit_7 {
+		position: absolute;
+		top: 25.83%;
+		left: 66.3%;
+	}
+	
+	.appcontrol .unit_8 {
+		position: absolute;
+		top: 28.83%;
+		left: 66.3%;
+	}
+	
+	.appcontrol .unit_9 {
+		position: absolute;
+		top: 39.565%;
+		left: 19.5%;
+	}
+	
+	.appcontrol .unit_10 {
+		position: absolute;
+		top: 39.565%;
+		left: 37.7%;
+	}
+	
+	.appcontrol .unit_11 {
+		position: absolute;
+		top: 39.565%;
+		left: 53.2%;
+	}
+	
+	.appcontrol .unit_12 {
+		position: absolute;
+		top: 39.565%;
+		left: 65.5%;
+	}
+	
+	.appcontrol .bluetooth {
+		font-size: 1.8vw;
+		font-weight: 400;
+	}
+	
+	.appcontrol .bn_1 {
+		width: 30%;
+		position: absolute;
+		top: 63.25%;
+		left: 32.8%;
+	}
+	
+	.appcontrol .bn_2 {
+		width: 30%;
+		position: absolute;
+		top: 57.6%;
+		left: 59.3%;
+		text-indent: 1.1em;
+	}
+	
+	.appcontrol .bn_3 {
+		widows: 35%;
+		position: absolute;
+		top: 71.5%;
+		left: 11%;
+		text-indent: 1.1em;
+	}
+	
+	.appcontrol .company_middle .ledicon {
+		width: 30%;
+		text-align: center;
+		font-size: 3.0vw;
+		font-weight: 300;
+		position: absolute;
+		left: 35%;
+		top: 76%;
+	}
+	
+	.appcontrol .company_middle .text {
+		width: 70%;
+		text-align: center;
+		font-size: 2.6vw;
+		font-weight: 300;
+		position: absolute;
+		top: 84%;
+		left: 15%;
+	}
+}
+
+@media (max-width: 960px) {
+	.appcontrol .company_middle .title {
+		text-align: center;
+		font-size: 2.5em;
+		font-weight: 300;
+	}
+	
+	.appcontrol .company_middle .title_1 {
+		width: 288px;
+		position: absolute;
+		top: 0.5%;
+		left: 336px;
+	}
+	
+	.appcontrol .title_2 {
+		width: 480px;
+		position: absolute;
+		top: 47%;
+		left: 240px;
+	}
+	
+	.appcontrol .unit {
+		font-size: 1.3em;
+		font-weight: 400;
+	}
+	
+	.appcontrol .unit_1 {
+		width: 300px;
+		position: absolute;
+		top: 6.55%;
+		left: 436px;
+	}
+	
+	.appcontrol .unit_2 {
+		width: 300px;
+		position: absolute;
+		top: 5.75%;
+		left: 59px;
+	}
+	
+	.appcontrol .unit_3 {
+		width: 300px;
+		position: absolute;
+		top: 7.05%;
+		left: 59px;
+	}
+	
+	.appcontrol .unit_4 {
+		width: 300px;
+		position: absolute;
+		top: 9.1%;
+		left: 59px;
+	}
+	
+	
+	.appcontrol .unit_5_1 {
+		width: 400px;
+		position: absolute;
+		top: 5.5%;
+		left: 763px;
+	}
+	
+	.appcontrol .unit_5_2 {
+		width: 400px;
+		position: absolute;
+		top: 6.6%;
+		left: 763px;
+	}
+	
+	.appcontrol .unit_5_3 {
+		width: 400px;
+		position: absolute;
+		top: 7.75%;
+		left: 763px;
+	}
+	
+	.appcontrol .unit_5_4 {
+		width: 400px;
+		position: absolute;
+		top: 8.85%;
+		left: 763px;
+	}
+	
+	.appcontrol .unit_6 {
+		width: 350px;
+		position: absolute;
+		top: 23.665%;
+		left: 636px;
+	}
+	
+	.appcontrol .unit_7 {
+		width: 350px;
+		position: absolute;
+		top: 25.75%;
+		left: 636px;
+	}
+	
+	.appcontrol .unit_8 {
+		width: 350px;
+		position: absolute;
+		top: 28.77%;
+		left: 636px;
+	}
+	
+	.appcontrol .unit_9 {
+		width: 150px;
+		position: absolute;
+		top: 39.55%;
+		left: 188px;
+	}
+	
+	.appcontrol .unit_10 {
+		width: 150px;
+		position: absolute;
+		top: 39.55%;
+		left: 362px;
+	}
+	
+	.appcontrol .unit_11 {
+		width: 100px;
+		position: absolute;
+		top: 39.55%;
+		left: 511px;
+	}
+	
+	.appcontrol .unit_12 {
+		width: 400px;
+		position: absolute;
+		top: 39.55%;
+		left: 629px;
+	}
+	
+	.appcontrol .bluetooth {
+		font-size: 1.3em;
+		font-weight: 300;
+	}
+	
+	.appcontrol .bn_1 {
+		width: 288px;
+		position: absolute;
+		top: 63%;
+		left: 315px;
+	}
+	
+	.appcontrol .bn_2 {
+		width: 288px;
+		position: absolute;
+		top: 57.25%;
+		left: 569px;
+		text-indent: 1.1em;
+	}
+	
+	.appcontrol .bn_3 {
+		widows: 336px;
+		position: absolute;
+		top: 71.3%;
+		left: 105px;
+		text-indent: 1.1em;
+	}
+	
+	.appcontrol .company_middle .ledicon {
+		width: 288px;
+		text-align: center;
+		font-size: 1.7em;
+		font-weight: 300;
+		position: absolute;
+		left: 336px;
+		top: 76%;
+	}
+	
+	.appcontrol .company_middle .text {
+		width: 672px;
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: 300;
+		position: absolute;
+		top: 84%;
+		left: 144px;
+	}
+}
