@@ -20,6 +20,10 @@
 		<script type='text/javascript' src='js/jquery.themepunch.revolution.min.js'></script>
 		<script type='text/javascript' src='js/jquery.scrollindicatorbullets.js'></script>
 		<script type='text/javascript' src='js/jquery-ui.js'></script>
+		
+		<script type="text/javascript" src="js/cookie.js"></script>
+		<script type="text/javascript" src="js/server.js"></script>
+		
 		<link type="text/css" href="css/base.css" rel="stylesheet" />
 		<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://ampd.energy/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
 		<link rel="shortcut icon" href="img/favicon.png" />
@@ -106,7 +110,7 @@
 										<div class="wpb_single_image wpb_content_element vc_align_left  wpb_animate_when_almost_visible wpb_bottom-to-top bottom-to-top vc_custom_1482944447159">
 
 											<figure class="wpb_wrapper vc_figure">
-												<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="400" height="549" src="img/man_black.jpg" class="vc_single_image-img attachment-full" alt="" /></div>
+												<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="400" height="549" src="img/man_black.jpg" id="vc_single_image-img" class="vc_single_image-img attachment-full" id="vc_single_image-img" alt="" /></div>
 											</figure>
 										</div>
 									</div>
@@ -126,7 +130,7 @@
 															<!--规格属性-->
 															<div class="sys_item_spec">
 
-																<dl class="clearfix iteminfo_parameter sys_item_specpara" data-sid="0">
+																<dl class="clearfix iteminfo_parameter sys_item_specpara" data-sid="1">
 																	<dt>Sex</dt>
 																	<dd>
 																		<ul class="sys_spec_text">
@@ -144,9 +148,9 @@
 																		<ul class="sys_spec_text">
 																			<li data-aid="13">
 																				<a href="javascript:;" title="S">S</a><i></i></li>
-																			<li data-aid="14" class="selected">
+																			<li data-aid="14">
 																				<a href="javascript:;" title="M">M</a><i></i></li>
-																			<li data-aid="16">
+																			<li data-aid="16" class="selected">
 																				<a href="javascript:;" title="L">L</a><i></i></li>
 																			<li data-aid="17">
 																				<a href="javascript:;" title="XL">XL</a><i></i></li>
@@ -154,11 +158,11 @@
 																	</dd>
 																</dl>
 
-																<dl class="clearfix iteminfo_parameter sys_item_specpara" data-sid="1">
+																<dl class="clearfix iteminfo_parameter sys_item_specpara" data-sid="3">
 																	<dt>Color</dt>
 																	<dd>
 																		<ul class="sys_spec_text">
-																			<li data-aid="3" class="selected">
+																			<li data-aid="3"  class="selected">
 																				<a href="javascript:;" title="黑色">黑色</a><i></i></li>
 																			<li data-aid="4">
 																				<a href="javascript:;" title="白色">白色</a><i></i></li>
@@ -171,7 +175,13 @@
 
 																<dl class="clearfix iteminfo_parameter lh32">
 																	<dt>Number</dt>
-																	<dd><span class="iteminfo_price"> <button class="sys_item_btn" type="button">-</button>  <b class="sys_item_no">6</b> <button class="sys_item_btn" type="button">+</button> </span></dd>
+																	<dd>
+																		<span class="iteminfo_price">
+																		<input class="sys_item_btn" id="min" name="" type="button" value="-" />  
+																		<input readOnly="true" class="sys_item_no" id="text_box" type="text" onkeydown="this.onkeyup();" onkeyup="this.size=(this.value.length>1?this.value.length:1);" size="1" value="6" />  
+																		<input class="sys_item_btn" id="add" name="" type="button" value="+" /> 
+																		</span>
+																	</dd>
 																</dl>
 
 																<dl class="clearfix iteminfo_parameter lh32">
@@ -180,7 +190,7 @@
 																</dl>
 																
 																<dl class="clearfix iteminfo_parameter lh32">
-																	 <button class="sys_item_buy" type="button">立即购买</button>  <button class="sys_item_buy" type="button">加入购物车</button>
+																	 <button class="sys_item_buy" type="button">立即购买</button>  <button class="sys_item_buy" type="button" onclick="save()">加入购物车</button>
 																</dl>
 
 															</div>
@@ -282,13 +292,13 @@ Heating Jacket. Warmer Than Warm.  </span>
 
 		<script type="text/javascript">
 			//				alert("Hello!!");
-			var htmlDiv = document.getElementsByClassName(".sys_item_spec .sys_item_specpara")
+			//var htmlDiv = document.getElementsByClassName(".sys_item_spec .sys_item_specpara")
 
 			//				htmlDiv.each(function(){
 			//					alert("123!!");
 			//				})
 			//				$(".sys_item_spec .sys_item_specpara").each(function() {
-			var i = $(this);
+			//var i = $(this);
 			//					var p = i.find("ul>li");
 			//					p.click(function() {
 			//						if(!!$(this).hasClass("selected")) {
@@ -330,5 +340,87 @@ Heating Jacket. Warmer Than Warm.  </span>
 	</body>
 
 </html>
+<script>
+    //商品规格选择
+    jQuery(function ($) {
+    	
+        $(".sys_item_spec .sys_item_specpara").each(function () {
+            var i = $(this);
+            var p = i.find("ul>li");
+            p.click(function () {
+            
+                if (!!$(this).hasClass("selected")) {
+                    $(this).removeClass("selected");
+                    i.removeAttr("data-attrval");
+                } else {
+                    $(this).addClass("selected").siblings("li").removeClass("selected");
+                    i.attr("data-attrval", $(this).attr("data-aid"))
+                }
+            })
+        })
+        var t = $("#text_box");  
+	    $("#add").click(function(){  
+	        t.val(parseInt(t.val())+1)  
+	        
+	    })  
+	    $("#min").click(function(){  
+	    	if (parseInt(t.val()) > 1) {
+	        	t.val(parseInt(t.val())-1)  
+	      	}
+	    }) 
+    })
+    
+    var listStr = cookieObj.get("datas");
+    //alert("list");
+    if(!listStr) { //没有购物车     datas  json
+		cookieObj.set({
+			name: "datas",
+			value: "[]"
+		});
+		listStr = cookieObj.get("datas");
+	}	
+	
+	var listObj = JSON.parse(listStr); //数组
+	function save() {
+		var lis = document.querySelectorAll("li");
+		var gender;
+		var size;
+		var color;
+		var count = parseInt(document.getElementById("text_box").value);
+		for (var i = 0; i < lis.length; i++) {
+			if (lis[i].className == "selected") {
+				if (gender == undefined) {
+					gender = lis[i].innerText;
+					//alert(gender);
+				} else if (size == undefined) {
+					size = lis[i].innerText;
+					//alert(size);
+				} else if (color == undefined) {
+					color = lis[i].innerText;
+					//alert(color);
+					break;
+				}
+			}
+		}
+		if(checkObj(gender, size, color)) {
+			listObj = updateObj(gender, size, color, count);
+		} else {
+			var imgSrc = document.getElementById("vc_single_image-img").src;
+			var pGender = gender;
+			var pSize = size;
+			var pColor = color;
+			var obj = {
+				pImg: imgSrc,
+				pGender: pGender,
+				pSize: pSize,
+				pColor: pColor,
+				pCount: count
+			};
+			listObj.push(obj)
+			listObj = updateData(listObj);
+		}
+		window.location.assign("cart.html");
+	}
+</script>
 
 <!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1498185479 -->
