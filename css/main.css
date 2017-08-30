@@ -5911,7 +5911,7 @@ tbody.collapse.in {
 	position: absolute;
 	top: 100%;
 	left: 0;
-	z-index: 1000;
+	z-index: 9999;
 	display: none;
 	float: left;
 	min-width: 160px;
@@ -13101,8 +13101,8 @@ body {
 
 .banner.header-transparent {
 	height: 121px;
-	position: relative;
-	overflow: hidden;
+	position: absolute;
+	/*overflow: hidden;*/
 	max-height: 121px
 }
 
@@ -13644,16 +13644,24 @@ header {
 	padding: 15px 25px 0
 }
 
-@media (max-width: 768px) {
-	.main-nav {
-		width: 650px;
-		float: right;
-	}
-	
-	.main-nav li {
-		float: left;
-		padding: 15px 15px 0
-	}
+ .main-nav .dropdown {
+	/*background: #00A8FF;*/
+}
+
+
+ .main-nav .dropdown .dropdown-menu{
+ 	background: #aaa;
+ }
+
+
+ .main-nav .dropdown .dropdown-menu li a{
+ 	padding-bottom:20px;
+ 	color: #090909;
+ }
+ 
+ .main-nav .dropdown .dropdown-menu li a:hover {
+ 	background: #aaa;
+	color: #2dbdb6
 }
 
 .main-nav li a {
@@ -13672,7 +13680,7 @@ header {
 	color: #2dbdb6
 }
 
-.current-menu-item a {
+.current-menu-item  {
 	border-bottom: 5px solid #00b288;
 	padding-bottom: 47px
 }
@@ -16439,7 +16447,7 @@ footer ul li a {
 .distribution .header-transparent {
 	height: 121px;
 	position: relative;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	max-height: 121px;
 }
 
