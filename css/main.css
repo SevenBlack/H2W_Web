@@ -3137,6 +3137,14 @@ pre code {
 	clear: both
 }
 
+.col-md-2{
+	width: 10%;
+}
+
+.col-md-10{
+	width: 90%;
+}
+
 .col-lg-1,
 .col-lg-2,
 .col-lg-3,
@@ -3185,6 +3193,7 @@ pre code {
 .col-xs-10,
 .col-xs-11,
 .col-xs-12 {
+	float: left;
 	position: relative;
 	min-height: 1px;
 	padding-left: 15px;
@@ -3599,7 +3608,7 @@ pre code {
 		width: 8.3333333333%
 	}
 	.col-md-2 {
-		width: 16.6666666667%
+		width: 12%
 	}
 	.col-md-3 {
 		width: 25%
@@ -3623,7 +3632,7 @@ pre code {
 		width: 75%
 	}
 	.col-md-10 {
-		width: 83.3333333333%
+		width: 88%
 	}
 	.col-md-11 {
 		width: 91.6666666667%
@@ -13650,7 +13659,7 @@ header {
 
 
  .main-nav .dropdown .dropdown-menu{
- 	background: #aaa;
+ 	background: #fff;
  }
 
 
@@ -13660,7 +13669,7 @@ header {
  }
  
  .main-nav .dropdown .dropdown-menu li a:hover {
- 	background: #aaa;
+ 	background: #fff;
 	color: #2dbdb6
 }
 
@@ -13804,6 +13813,16 @@ header {
 }
 
 .fixedheader.fixed .main-nav li a:hover {
+	color: #2dbdb6!important
+}
+
+
+.fixedheader.fixed .main-nav .dropdown .dropdown-menu li a {
+	color: #333!important;
+	padding-bottom: 29px
+}
+
+.fixedheader.fixed .main-nav .dropdown .dropdown-menu li a:hover {
 	color: #2dbdb6!important
 }
 
@@ -14199,14 +14218,6 @@ footer ul li:first-child {
 	}
 }
 
-@media (max-width:666px) {
-	footer .menu-item {
-		width: 100%;
-		margin: 0 auto;
-		text-align: center;
-		padding-bottom: 20px
-	}
-}
 
 footer li,
 footer ul {
@@ -14242,6 +14253,26 @@ footer ul li a {
 	font-weight: 300;
 	font-size: 18px;
 	text-decoration: none
+}
+
+ footer .dropdown .dropdown-menu li a{
+ 	color: #333;
+ 	list-style: none;
+    float: left;
+    position: relative;
+    padding: 15px 25px 0;
+ }
+ 
+ 
+ 
+ footer .dropdown .dropdown-menu li  {
+    display: inline-block;
+    margin: 0 0 0 0;
+}
+ 
+ footer .dropdown .dropdown-menu li a:hover {
+ 	background: #fff;
+	color: #2dbdb6
 }
 
 @media (max-width:768px) {
