@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+
+		<script>
+			
+			var type = navigator.appName
+			if(type == "Netscape")
+				var lang = navigator.language
+			else
+				var lang = navigator.userLanguage
+
+			//cut down to first 2 chars of country code 
+			var lang = lang.substr(0, 5)
+
+			lang = lang.toLocaleLowerCase();
+
+			//			alert(lang);
+
+			// 英语
+			if(lang == "en-us")
+				window.location.replace('en/index.html')
+
+			// 简体中文
+			else if(lang == "zh-cn")
+				window.location.replace('cht/index.html')
+
+			// 繁体中文
+			else if(lang == "zh-hk")
+				window.location.replace('cht/index.html')
+
+			// 简体中文
+			else if(lang == "ko-kr")
+				window.location.replace('kr/index.html')
+
+			// 除上面所列的语言
+			else
+				window.location.replace('en/index.html')
+		</script>
+
+	</head>
+
+	<body>
+
+	</body>
+
+</html>
