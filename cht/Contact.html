@@ -12,10 +12,10 @@
 		<link rel='stylesheet' href='../css/js_composer.min.css' type='text/css' media='all' />
 		<link rel='stylesheet' href='../css/main.css' type='text/css' media='all' />
 
-		<script type='text/javascript' src='../js/jquery.js'></script>
-
 		<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/vc_lte_ie9.min.css" media="screen"><![endif]-->
 		<link rel="shortcut icon" href="../img/favicon.png" />
+		
+		<script type='text/javascript' src='../js/jquery.js'></script>
 
 	</head>
 
@@ -150,7 +150,7 @@
 									<div class="wpb_wrapper">
 										<div role="form" class="wpcf7" id="wpcf7-f118-p903-o1" lang="en-US" dir="ltr">
 											<div class="screen-reader-response"></div>
-											<form action="/contact/#wpcf7-f118-p903-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+											<form id="main-contact-form" name="contact-form" method="post" action="../PhpAction/send.php">
 												<div style="display: none;">
 													<input type="hidden" name="_wpcf7" value="118" />
 													<input type="hidden" name="_wpcf7_version" value="4.9" />
@@ -160,14 +160,15 @@
 												</div>
 												<div class="email_from">
 													<div class="email_contact">
-														<span class="wpcf7-form-control-wrap name"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="名字*" /></span>
+														                                               <!--<input type="text" name="name" id="name" class="form-control" required="required" placeholder="Name">--> 
+														<span class="wpcf7-form-control-wrap name"><input type="text" id="name" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" required="true" aria-invalid="true" placeholder="名字*" /></span>
 													</div>
 													<div class="email_contact">
-														<span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="電郵*" /></span>
+														<span class="wpcf7-form-control-wrap email"><input type="email" id="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required="true" aria-invalid="false" placeholder="電郵*" /></span>
 													</div>
 													<div class="email_contact">
 														<span class="wpcf7-form-control-wrap website">
-															<textarea name="a" style="width:95%;height:200px;padding: 15px;">評論*</textarea>
+															<textarea id="message"  name="message" style="width:95%;height:200px;padding: 15px;" required="required">評論*</textarea>
 														</span></p>
 													</div>
 													<div class="send">
@@ -180,33 +181,27 @@
 									</div>
 								</div>
 							</div>
-							
+
 							<div class="wpb_column vc_column_container vc_col-sm-2">
 								<div class="vc_column-inner ">
 									<div class="wpb_wrapper">
-										
-										
+
 									</div>
 								</div>
 							</div>
-							
+
 							<div class="wpb_column vc_column_container vc_col-sm-4">
 								<div class="vc_column-inner ">
 									<div class="wpb_wrapper">
-										
-										<img class="alignnone size-full wp-image-974" src="../img/EVS_2889a4R.png" alt="company_middle" width="100%"  />
-										
-										
+
+										<img class="alignnone size-full wp-image-974" src="../img/EVS_2889a4R.png" alt="company_middle" width="100%" />
+
 									</div>
 								</div>
 							</div>
-							
-							
+
 						</div>
-						
-						
-						
-						
+
 						<div class="vc_row wpb_row vc_row-fluid">
 							<div class="wpb_column vc_column_container vc_col-sm-12">
 								<div class="vc_column-inner ">
@@ -300,7 +295,6 @@
 							<div class="footer_contact">
 								<a href="mailto:contact@heat2wear.com" target="_top" class="footer_context">
 									contact@heat2wear.com </a>
-
 							</div>
 						</div>
 					</section>
@@ -326,26 +320,12 @@
 
 				</div>
 			</div>
-			
-			<script type='text/javascript'>
-				/* <![CDATA[ */
-				var wpcf7 = {
-					"apiSettings": {
-						"root": "https:\/\/ampd.energy\/wp-json\/contact-form-7\/v1",
-						"namespace": "contact-form-7\/v1"
-					},
-					"recaptcha": {
-						"messages": {
-							"empty": "Please verify that you are not a robot."
-						}
-					}
-				};
-				/* ]]> */
-			</script>
-			<script type='text/javascript' src='../js/scripts.js'></script>
 
 			<script type='text/javascript' src='../js/main.js'></script>
 			<script type='text/javascript' src='../js/js_composer_front.min.js'></script>
+			<script type="text/javascript" src="../js/jquery-2.2.3.min.js" ></script>
+			<script type="text/javascript" src="../js/jquery.animsition.min.js" ></script>
+			<script type="text/javascript" src="../js/contact.js" ></script>
 
 		</div>
 	</body>
