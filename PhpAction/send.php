@@ -4,9 +4,9 @@ $rootPath = dirname(__FILE__);
 require $rootPath . '/PHPMailer/class.phpmailer.php';
 require $rootPath . '/PHPMailer/class.smtp.php';
 
-$name = @trim(stripslashes($_POST['name']));
-$email = @trim(stripslashes($_POST['email']));
-$message = @trim(stripslashes($_POST['message']));
+$name = @trim(stripslashes($_GET['name']));
+$email = @trim(stripslashes($_GET['email']));
+$message = @trim(stripslashes($_GET['message']));
 
 echo $name .'<br/>' . $email .'<br/>' .$message .'<br/>';
 
