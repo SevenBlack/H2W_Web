@@ -129,22 +129,22 @@
 							<div class="col-xs-12">
 								<div class="comment-respond" id="respond">
 									<h4 class="text-center" style="margin-top: 55px; margin-bottom: 35px;">GET IN TOUCH</h4>
-									<form action="http://webdesign-finder.com/" class="comment-form contact-form" id="commentform" method="post">
+									<form id="main-contact-form" name="contact-form" method="post" action="../../PhpAction/send.php">
 										<div class="row">
 											<div class="col-md-6">
 												<p class="comment-form-author">
-													<input type="text" class="form-control" placeholder="enter Your name" required>
+													<input type="text" name="name" id="name" class="form-control" placeholder="enter Your name" required>
 												</p>
 											</div>
 											<div class="col-md-6">
 												<p class="comment-form-email">
-													<input type="email" class="form-control" placeholder="enter Your E-mail" required>
+													<input type="email" name="email" id="email" class="form-control" placeholder="enter Your E-mail" required>
 												</p>
 											</div>
 
 											<div class="col-md-12">
 												<p class="comment-form-chat">
-													<textarea name="comment" id="comment" rows="6" class="form-control" placeholder="Write a comment"></textarea>
+													<textarea name="message" id="message" rows="6" class="form-control" placeholder="Write a comment"></textarea>
 												</p>
 											</div>
 											<p class="form-submit text-center">
@@ -230,9 +230,12 @@
 			<!-- eof #box_wrapper -->
 		</div>
 		<!-- eof #canvas -->
-
+		
 		<script src="../js/compressed.js"></script>
 		<script src="../js/main.js"></script>
+		
+		<!--<script type="text/javascript" src="../../js/jquery.animsition.min.js"></script>
+		<script type="text/javascript" src="../../js/contact.js"></script>-->
 
 	</body>
 

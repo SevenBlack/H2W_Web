@@ -1,12 +1,12 @@
-<?php
+﻿<?php
 //引入类
 $rootPath = dirname(__FILE__);
 require $rootPath . '/PHPMailer/class.phpmailer.php';
 require $rootPath . '/PHPMailer/class.smtp.php';
 
-$name = @trim(stripslashes($_GET['name']));
-$email = @trim(stripslashes($_GET['email']));
-$message = @trim(stripslashes($_GET['message']));
+$name = @trim(stripslashes($_POST['name']));
+$email = @trim(stripslashes($_POST['email']));
+$message = @trim(stripslashes($_POST['message']));
 
 echo $name .'<br/>' . $email .'<br/>' .$message .'<br/>';
 
@@ -15,18 +15,18 @@ $mail = new PHPMailer;
 
 $mail -> isSMTP();
 // Set mailer to use SMTP
-$mail -> Host = 'smtp.163.com';
+$mail -> Host = 'smtp.sina.com';
 // Specify main and backup SMTP servers
 $mail -> SMTPAuth = true;
 // Enable SMTP authentication
-$mail -> Username = 'qmh0611';
+$mail -> Username = 'heat2wear';
 // SMTP username
-$mail -> Password = '76827210qmh';
+$mail -> Password = 'heat2wear';
 // SMTP password
 $mail -> CharSet = 'UTF-8';
 
-$mail -> setFrom('qmh0611@163.com', 'WebSite');
-$mail -> addAddress('Tommy@cerasol.com.hk', 'Contact');
+$mail -> setFrom('heat2wear@sina.com', 'WebSite');
+$mail -> addAddress('contact@heat2wear.com', 'Contact');
 // Add a recipient
 
 $mail -> isHTML(true);
